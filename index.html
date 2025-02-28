@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koushik Reddy | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Koushik Reddy Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I’m Koushik Reddy Tiparthi</h1>
+            <p>A passionate Machine Learning Engineer and Data Analytics Enthusiast with a strong foundation in Artificial Intelligence.</p>
+            <a href="#projects" class="cta">Explore Projects</a>
+        </div>
+        <canvas id="particles"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Machine Learning: Proficient in developing predictive models using frameworks like TensorFlow, PyTorch, and Scikit-learn. I have experience in implementing classification, regression, and clustering algorithms.</p>
+            <p>Data Analytics: Adept at extracting meaningful insights from large datasets using Python, Pandas, and SQL. I enjoy visualizing data trends using tools like Matplotlib, Seaborn, and Power BI.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill" data-skill="HTML" data-percent="90"></div>
+            <div class="skill" data-skill="CSS" data-percent="85"></div>
+            <div class="skill" data-skill="Python" data-percent="95"></div>
+            <div class="skill" data-skill="SQL" data-percent="90"></div>
+            <div class="skill" data-skill="Machine Learning" data-percent="80"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="filter">
+            <button data-filter="all">All</button>
+            <button data-filter="frontend">Machine Learning</button>
+            <button data-filter="fullstack">AI chatbots</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="frontend">
+                <h3>Multi-sensor Based action monitoring and recognition using Hybrid Descriptors</h3>
+                <p>Developed an application using flask for Actions statistics</p>
+                
+            </div>
+            <div class="project-card" data-category="fullstack">
+                <h3>AI-agents for Medical Diagnosis</h3>
+                <p>LangChain_OpenAI,Python_dotenv,Langchain_community</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/koushikrdy" class="github">GitHub</a>
+            <a href="https://www.linkedin.com/in/t-koushik-reddy-112342267/" class="linkedin">LinkedIn</a>
+            <a href="#" class="twitter">Twitter/X</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Koushik Reddy</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
