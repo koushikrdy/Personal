@@ -47,7 +47,7 @@ body {
 .nav-content a {
     color: #e6e6e6;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2rem;
     opacity: 0;
     animation: fadeIn 0.5s ease forwards;
@@ -136,7 +136,7 @@ body {
 
 .ai-box {
     opacity: 0;
-    animation: pulse 2s infinite ease-in-out;
+    animation: slideInLeft 1s ease forwards;
     animation-delay: 0.2s;
 }
 
@@ -171,7 +171,7 @@ body {
 }
 
 .projects-background {
-    background: linear-gradient(135deg, #d1c4e9, #ede7f6); /* Light purple for AI creativity */
+    background: linear-gradient(135deg, #d0834c, #cac154); /* Light purple for AI creativity */
 }
 
 #projects .page-content h2 {
@@ -183,7 +183,7 @@ body {
 
 #projects .page-content p {
     font-family: 'Lora', serif;
-    color: #e6e6e6;
+    color: #e90e0e;
     font-size: 1.4rem;
 }
 
