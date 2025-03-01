@@ -3,114 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koushik Reddy | Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Koushik Reddy Logo">
-        </div>
-        <nav>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1>Your Name</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="theme-toggle">
-                <span class="sun">☀️</span>
-                <span class="moon">🌙</span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I’m Koushik Reddy Tiparthi</h1>
-            <p>A passionate Machine Learning Engineer and Data Analytics Enthusiast with a strong foundation in Artificial Intelligence.</p>
-            <a href="#projects" class="cta">Explore Projects</a>
         </div>
-        <canvas id="particles"></canvas>
+    </nav>
+
+    <section id="home" class="page">
+        <div class="background-animation home-background"></div>
+        <div class="page-content">
+            <img src="assets/images/logo.png" alt="Profile Picture" class="profile-img">
+            <h2>Hello, I’m Your Name</h2>
+            <div class="role-boxes">
+                <div class="role-box ai-box"><p>AI Enthusiast</p></div>
+                <div class="role-box web-box"><p>Web Developer</p></div>
+                <div class="role-box devops-box"><p>DevOps Learner</p></div>
+            </div>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        
-        <div class="about-text">
+    <section id="about" class="page">
+        <div class="background-animation about-background"></div>
+        <div class="page-content">
             <h2>About Me</h2>
-            <p>Machine Learning: Proficient in developing predictive models using frameworks like TensorFlow, PyTorch, and Scikit-learn. I have experience in implementing classification, regression, and clustering algorithms.</p>
-            <p>Data Analytics: Adept at extracting meaningful insights from large datasets using Python, Pandas, and SQL. I enjoy visualizing data trends using tools like Matplotlib, Seaborn, and Power BI.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill" data-skill="HTML" data-percent="90"></div>
-            <div class="skill" data-skill="CSS" data-percent="85"></div>
-            <div class="skill" data-skill="Python" data-percent="95"></div>
-            <div class="skill" data-skill="SQL" data-percent="90"></div>
-            <div class="skill" data-skill="Machine Learning" data-percent="80"></div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="filter">
-            <button data-filter="all">All</button>
-            <button data-filter="frontend">Machine Learning</button>
-            <button data-filter="fullstack">AI chatbots</button>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card" data-category="frontend">
-                <h3>Multi-sensor Based action monitoring and recognition using Hybrid Descriptors</h3>
-                <p>Developed an application using flask for Actions statistics</p>
-                <h3>Detection of Liver Cancer Using Image processing Techniques</h3>
-                <p>In this project Magnetic Resonance Imaging (MRI)images are used to identify liver tumors in this case. The image goes
-                    through image preprocessing, image segmentation, and feature extraction, all of which are done within the layers of an
-                    Artificial Neural Network, making it an automated operation.
-                    </p>
-                
-                
+            <p>
+                I’m a driven innovator at the intersection of artificial intelligence, healthcare, and software engineering. 
+                With a strong foundation in cutting-edge technologies, I excel in transforming complex challenges into impactful solutions. 
+                My journey includes pioneering AI-driven medical diagnostics, advancing image processing techniques, and optimizing cloud-based systems through DevOps. 
+                I thrive on pushing boundaries and delivering excellence in every project I undertake.
+            </p>
+            <div class="internships">
+                <h3>Internships</h3>
+                <div class="internship-container">
+                    <div class="internship-card">
+                        <p><strong>Generative AI Intern @ DIGIOTAi:</strong> Engineered an advanced chatbot for medical diagnosis, harnessing cutting-edge AI technologies.</p>
+                    </div>
+                    <div class="internship-card">
+                        <p><strong>DevOps with AWS Intern (Current):</strong> Mastering cloud infrastructure and deployment pipelines with AWS to drive scalable solutions.</p>
+                    </div>
+                </div>
             </div>
-            <div class="project-card" data-category="fullstack">
-                <h3>AI-agents for Medical Diagnosis</h3>
-                <p>LangChain_OpenAI,Python_dotenv</p>
-                
+            <div class="ai-animations">
+                <div class="ai-particle"></div>
+                <div class="ai-particle"></div>
+                <div class="ai-particle"></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <div class="social-links">
-            <a href="https://github.com/koushikrdy" class="github">GitHub</a>
-            <a href="https://www.linkedin.com/in/t-koushik-reddy-112342267/" class="linkedin">LinkedIn</a>
-            <a href="#" class="twitter">Twitter/X</a>
+    <section id="projects" class="page">
+        <div class="background-animation projects-background"></div>
+        <div class="page-content">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Detection of Liver Cancer Using Image Processing</h3>
+                    <p>Utilized MRI images for automated liver tumor detection via image preprocessing, segmentation, and feature extraction within an Artificial Neural Network.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3>Multi-Sensor Based Action Monitoring</h3>
+                    <p>Developed a system using hybrid descriptors for fall detection and human activity recognition with inertial sensors and geometric characteristics.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3>AI-Agents for Medical Diagnosis</h3>
+                    <p>A Python-based project creating LLM-based AI agents to analyze medical cases and provide personalized treatment recommendations.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="skills" class="page">
+        <div class="background-animation skills-background"></div>
+        <div class="page-content">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-item"><i class="fab fa-html5"></i> HTML</li>
+                <li class="skill-item"><i class="fab fa-css3-alt"></i> CSS</li>
+                <li class="skill-item"><i class="fab fa-js"></i> JavaScript</li>
+                <li class="skill-item"><i class="fab fa-java"></i> Java</li>
+                <li class="skill-item"><i class="fab fa-python"></i> Python</li>
+                <li class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                <li class="skill-item"><i class="fas fa-table"></i> NumPy</li>
+                <li class="skill-item"><i class="fas fa-table"></i> Pandas</li>
+                <li class="skill-item"><i class="fas fa-chart-line"></i> Matplotlib</li>
+                <li class="skill-item"><i class="fas fa-brain"></i> Scikit-learn</li>
+                <li class="skill-item"><i class="fas fa-network-wired"></i> TensorFlow</li>
+                <li class="skill-item"><i class="fas fa-database"></i> SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="page">
+        <div class="background-animation contact-background"></div>
+        <div class="page-content">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="modern-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="form-message"></p>
+            <div class="contact-buttons">
+                <a href="tel:+1234567890" class="contact-btn call-btn">Call Me</a>
+                <a href="path/to/your-resume.pdf" download="YourName_Resume.pdf" class="contact-btn resume-btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Koushik Reddy</p>
+        <p>© 2025 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com/your-handle" target="_blank" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="https://github.com/your-username" target="_blank" aria-label="GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03 1.37 2.34 3.6 1.66 4.47 1.27.14-.99.53-1.66 1-2.04-3.47-.4-7.12-1.74-7.12-7.75 0-1.71.61-3.11 1.61-4.2-.16-.4-.71-2 .16-4.16 0 0 1.32-.43 4.33 1.61a15.1 15.1 0 017.94 0c3-2.04 4.33-1.61 4.33-1.61.87 2.16.32 3.76.16 4.16 1 1.09 1.61 2.49 1.61 4.2 0 6.02-3.66 7.34-7.14 7.74.56.48 1.06 1.43 1.06 2.88v4.27c0 .28.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
